@@ -1,7 +1,9 @@
 <%= @snack.name %>
 <%= @snack.price %>
 <% @snack.machines.each do |machine| %>
-  <%= machine.location %>
-  <%= machine.average_snack_price %>
-  <%= machine.snack_count %>
+  <section id="machine-<%= machine.id %>">
+    <%= machine.location %>
+    <%= machine.average_snack_price %>
+    <%= machine.snack_count %>
+  </section>
 <% end %>
