@@ -14,7 +14,7 @@ describe "User Story 3" do
     et.snacks << [mm, sunchips, jerky, monster]
     turing.snacks << [sunchips, jerky]
 
-    visit "/snacks/#{jerky.id}"
+    visit snack_path(jerky)
 
     expect(page).to have_content jerky.price
 

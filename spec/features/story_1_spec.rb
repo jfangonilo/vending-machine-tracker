@@ -9,7 +9,7 @@ describe "User Story 1:" do
     jerky = Snack.create(name: "Jack Links", price: 1_75)
     turing.snacks << [mm, sunchips, jerky]
 
-    visit "/machines/#{turing.id}"
+    visit machine_path(turing)
     within "#snack-#{mm.id}" do
       expect(page).to have_content mm.name
       expect(page).to have_content mm.price
