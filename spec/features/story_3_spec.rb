@@ -26,15 +26,15 @@ describe "User Story 3" do
     expect(page).to have_content jerky.price
 
     within "#machine-#{et.id}" do
-      expect(page).to have_content et.name
+      expect(page).to have_content et.location
       expect(page).to have_content et.average_snack_price
-      expect(page).to have_content et.numer_of_snack
+      expect(page).to have_content et.snack_count
     end
 
     within "#machine-#{turing.id}" do
-      expect(page).to have_content turing.name
+      expect(page).to have_content turing.location
       expect(page).to have_content turing.average_snack_price
-      expect(page).to have_content turing.numer_of_snack
+      expect(page).to have_content turing.snack_count
     end
   end
 end
