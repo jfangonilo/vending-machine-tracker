@@ -7,7 +7,7 @@
 #   and I see a count of the different kinds of items in that vending machine.
 require 'rails_helper'
 
-descrube "User Story 3" do
+describe "User Story 3" do
   it "shows all the things about the snack" do
     jomah = Owner.create(name: "Jomah")
     et = Machine.create(location: "Earth Treks", owner: jomah)
