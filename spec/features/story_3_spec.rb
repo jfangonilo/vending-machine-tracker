@@ -28,17 +28,13 @@ descrube "User Story 3" do
     within "#machine-#{et.id}" do
       expect(page).to have_content et.name
       expect(page).to have_content et.average_snack_price
-      expect(page).to have_content mm.name
-      expect(page).to have_content sunchips.name
-      expect(page).to have_content jerky.name
-      expect(page).to have_content monster.name
+      expect(page).to have_content et.numer_of_snack
     end
 
     within "#machine-#{turing.id}" do
       expect(page).to have_content turing.name
       expect(page).to have_content turing.average_snack_price
-      expect(page).to have_content sunchips.name
-      expect(page).to have_content jerky.name
+      expect(page).to have_content turing.numer_of_snack
     end
   end
 end
